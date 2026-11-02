@@ -1,25 +1,25 @@
-import { Droplet, Footprints, Moon, Flame } from 'lucide-react';
+import { MapPinned, Briefcase, FileStack, Wrench } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen" style={{ backgroundColor: '#FAFAF9' }}>
+    <div className="min-h-screen" style={{ backgroundColor: '#F5F4EF' }}>
       <Navbar />
 
       {/* Hero Section */}
       <section className="py-20" style={{ backgroundColor: '#FFFFFF' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold mb-6" style={{ backgroundColor: '#1A1A1A', color: '#C79A3B' }}>
-              <Flame className="w-4 h-4" />
-              About Lifestyle Loop
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold mb-6" style={{ backgroundColor: '#0E3B36', color: '#DE7A49' }}>
+              <FileStack className="w-4 h-4" />
+              About Resources Needed
             </div>
-            <h1 className="text-5xl font-extrabold mb-6" style={{ color: '#111827' }}>
-              Built Around One Simple Loop
+            <h1 className="text-5xl font-extrabold mb-6" style={{ color: '#163832' }}>
+              Built Around Real-Life Projects
             </h1>
-            <p className="text-xl max-w-3xl mx-auto" style={{ color: '#374151' }}>
-              Most habit apps ask you to track everything at once. Lifestyle Loop was built around one repeatable loop instead — pick a habit, check in, build a streak, earn a reward — because that's what actually keeps people coming back.
+            <p className="text-xl max-w-3xl mx-auto" style={{ color: '#47564F' }}>
+              Big life events come with a long list of small tasks, and it's easy to lose track of what still needs doing. Resources Needed was built around one idea — turn each event into a project, give you a clear checklist, and let you track your own progress at your own pace.
             </p>
           </div>
         </div>
@@ -28,56 +28,56 @@ export default function AboutPage() {
       {/* Mission Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-4xl font-bold mb-6" style={{ color: '#111827' }}>Why We Built Lifestyle Loop</h2>
-          <p className="text-lg mb-4" style={{ color: '#374151' }}>
-            Most habit trackers hand you a long list of metrics and leave you to figure out why none of them stick. We wanted something simpler: a loop you repeat every day, built around habits you actually care about — hydration, steps, sleep, mindfulness, and reading.
+          <h2 className="text-4xl font-bold mb-6" style={{ color: '#163832' }}>Why We Built Resources Needed</h2>
+          <p className="text-lg mb-4" style={{ color: '#47564F' }}>
+            Searching the internet for scattered advice on moving, starting a new job, or getting your paperwork organized can take hours and still leave gaps. We wanted a simpler way: one library of clear, step-by-step guides, organized around the projects people actually face.
           </p>
-          <p className="text-lg" style={{ color: '#374151' }}>
-            Every check-in feeds your streak, every streak feeds your points, and every point gets you closer to something in the Lifestyle Loop rewards catalog. It's a simple cycle, built to repeat.
+          <p className="text-lg" style={{ color: '#47564F' }}>
+            Every guide becomes a checklist you can save to your account, work through at your own pace, and revisit whenever you need a reminder of what's left to do.
           </p>
         </div>
         <div className="grid md:grid-cols-2 gap-8">
-          <div className="rounded-2xl p-8 border" style={{ backgroundColor: '#FFFFFF', borderColor: '#E5E7EB' }}>
+          <div className="rounded-2xl p-8 border" style={{ backgroundColor: '#FFFFFF', borderColor: '#DCE3DA' }}>
             <div className="flex items-start">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center" style={{ backgroundColor: '#1A1A1A' }}>
-                <Droplet className="w-5 h-5" style={{ color: '#C79A3B' }} />
+              <div className="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center" style={{ backgroundColor: '#0E3B36' }}>
+                <MapPinned className="w-5 h-5" style={{ color: '#DE7A49' }} />
               </div>
               <div className="ml-4">
-                <h3 className="text-lg font-semibold mb-1" style={{ color: '#111827' }}>Habits That Fit Real Life</h3>
-                <p style={{ color: '#374151' }}>Hydration, steps, sleep, mindfulness, and reading are habits you can realistically keep up with, day after day, no matter how busy things get.</p>
+                <h3 className="text-lg font-semibold mb-1" style={{ color: '#163832' }}>Guides for Real Life Events</h3>
+                <p style={{ color: '#47564F' }}>Moving, starting a new job, and organizing paperwork are projects almost everyone faces — our guides walk through each one step by step.</p>
               </div>
             </div>
           </div>
-          <div className="rounded-2xl p-8 border" style={{ backgroundColor: '#FFFFFF', borderColor: '#E5E7EB' }}>
+          <div className="rounded-2xl p-8 border" style={{ backgroundColor: '#FFFFFF', borderColor: '#DCE3DA' }}>
             <div className="flex items-start">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center" style={{ backgroundColor: '#1A1A1A' }}>
-                <Footprints className="w-5 h-5" style={{ color: '#C79A3B' }} />
+              <div className="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center" style={{ backgroundColor: '#0E3B36' }}>
+                <Briefcase className="w-5 h-5" style={{ color: '#DE7A49' }} />
               </div>
               <div className="ml-4">
-                <h3 className="text-lg font-semibold mb-1" style={{ color: '#111827' }}>Daily Check-Ins</h3>
-                <p style={{ color: '#374151' }}>A simple daily check-in is all it takes to keep your streak alive — no complicated logs, no overthinking.</p>
+                <h3 className="text-lg font-semibold mb-1" style={{ color: '#163832' }}>Saved to Your Account</h3>
+                <p style={{ color: '#47564F' }}>Save any guide to your account so it's there the next time you log in, instead of starting your search over from scratch.</p>
               </div>
             </div>
           </div>
-          <div className="rounded-2xl p-8 border" style={{ backgroundColor: '#FFFFFF', borderColor: '#E5E7EB' }}>
+          <div className="rounded-2xl p-8 border" style={{ backgroundColor: '#FFFFFF', borderColor: '#DCE3DA' }}>
             <div className="flex items-start">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center" style={{ backgroundColor: '#1A1A1A' }}>
-                <Moon className="w-5 h-5" style={{ color: '#C79A3B' }} />
+              <div className="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center" style={{ backgroundColor: '#0E3B36' }}>
+                <Wrench className="w-5 h-5" style={{ color: '#DE7A49' }} />
               </div>
               <div className="ml-4">
-                <h3 className="text-lg font-semibold mb-1" style={{ color: '#111827' }}>Streaks Worth Protecting</h3>
-                <p style={{ color: '#374151' }}>Once a streak starts building, it becomes its own motivation — Lifestyle Loop just helps you see it and keep it going.</p>
+                <h3 className="text-lg font-semibold mb-1" style={{ color: '#163832' }}>Checklists You Can Track</h3>
+                <p style={{ color: '#47564F' }}>Check off each step as you complete it, so you can see exactly what's done and what's still left on your project.</p>
               </div>
             </div>
           </div>
-          <div className="rounded-2xl p-8 border" style={{ backgroundColor: '#FFFFFF', borderColor: '#E5E7EB' }}>
+          <div className="rounded-2xl p-8 border" style={{ backgroundColor: '#FFFFFF', borderColor: '#DCE3DA' }}>
             <div className="flex items-start">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center" style={{ backgroundColor: '#1A1A1A' }}>
-                <Flame className="w-5 h-5" style={{ color: '#C79A3B' }} />
+              <div className="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center" style={{ backgroundColor: '#0E3B36' }}>
+                <FileStack className="w-5 h-5" style={{ color: '#DE7A49' }} />
               </div>
               <div className="ml-4">
-                <h3 className="text-lg font-semibold mb-1" style={{ color: '#111827' }}>Points That Mean Something</h3>
-                <p style={{ color: '#374151' }}>Points earned from check-ins and streaks go straight toward real items in the Lifestyle Loop rewards catalog.</p>
+                <h3 className="text-lg font-semibold mb-1" style={{ color: '#163832' }}>Reminders That Keep You Moving</h3>
+                <p style={{ color: '#47564F' }}>Get a nudge on the steps you haven't finished yet, so a busy week doesn't turn into a stalled project.</p>
               </div>
             </div>
           </div>

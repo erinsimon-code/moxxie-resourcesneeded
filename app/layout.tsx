@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Lifestyle Loop | Build Habits, Keep Streaks, Earn Rewards",
-  description: "Lifestyle Loop helps you build better daily habits — hydration, steps, sleep, mindfulness, and reading — with daily check-ins, streaks, and points you redeem in the Lifestyle Loop rewards catalog.",
+  title: "Resources Needed | Free Guides & Checklists for Life Events",
+  description: "Resources Needed is a free library of step-by-step guides and checklists for life events like moving, starting a new job, and getting ready for tax season. Create an account, pick a project, save guides, check off steps, and get reminders.",
 };
 
 export default function RootLayout({
