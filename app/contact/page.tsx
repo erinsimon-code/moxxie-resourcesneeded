@@ -20,46 +20,46 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="min-h-screen" style={{ backgroundColor: '#F8FAFC' }}>
+    <div className="min-h-screen" style={{ backgroundColor: '#F4F7FA' }}>
       <Navbar />
       <section className="py-12" style={{ backgroundColor: '#FFFFFF' }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl font-extrabold mb-4" style={{ color: '#1E293B' }}>Get In Touch</h1>
-          <p className="text-lg" style={{ color: '#475569' }}>Questions about your account, saved guides, or the guide library? We'd love to hear from you.</p>
+          <h1 className="text-4xl font-extrabold mb-4" style={{ color: '#10243E' }}>Get In Touch</h1>
+          <p className="text-lg" style={{ color: '#3B5773' }}>Questions about enrolling, your company code, or upcoming workshops? We'd love to hear from you.</p>
         </div>
       </section>
       <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div>
-            <h2 className="text-2xl font-bold mb-6" style={{ color: '#1E293B' }}>Drop Us a Line</h2>
+            <h2 className="text-2xl font-bold mb-6" style={{ color: '#10243E' }}>Drop Us a Line</h2>
             {submitted ? (
-              <div className="rounded-xl p-8 text-center" style={{ backgroundColor: '#FFFFFF', border: '1px solid #B87333' }}>
-                <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4" style={{ backgroundColor: '#334155' }}>
-                  <svg className="w-8 h-8" style={{ color: '#B87333' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="rounded-xl p-8 text-center" style={{ backgroundColor: '#FFFFFF', border: '1px solid #E3B341' }}>
+                <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4" style={{ backgroundColor: '#0F2A4A' }}>
+                  <svg className="w-8 h-8" style={{ color: '#E3B341' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold mb-2" style={{ color: '#1E293B' }}>Message On Its Way!</h3>
-                <p style={{ color: '#475569' }}>Thanks for reaching out — expect to hear back from our team within 1–2 business days.</p>
+                <h3 className="text-xl font-bold mb-2" style={{ color: '#10243E' }}>Message On Its Way!</h3>
+                <p style={{ color: '#3B5773' }}>Thanks for reaching out — expect to hear back from our team within 1–2 business days.</p>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-5">
                 <div>
-                  <label className="block text-sm font-medium mb-1" style={{ color: '#1E293B' }}>Full Name *</label>
-                  <input type="text" name="name" required value={formData.name} onChange={handleChange} placeholder="Jane Smith" className="block w-full px-4 py-3 rounded-lg" style={{ border: '1px solid #E2E8F0', backgroundColor: '#FFFFFF', color: '#1E293B' }} />
+                  <label className="block text-sm font-medium mb-1" style={{ color: '#10243E' }}>Full Name *</label>
+                  <input type="text" name="name" required value={formData.name} onChange={handleChange} placeholder="Jane Smith" className="block w-full px-4 py-3 rounded-lg" style={{ border: '1px solid #D9E2EC', backgroundColor: '#FFFFFF', color: '#10243E' }} />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium mb-1" style={{ color: '#1E293B' }}>Email Address *</label>
-                  <input type="email" name="email" required value={formData.email} onChange={handleChange} placeholder="jane@example.com" className="block w-full px-4 py-3 rounded-lg" style={{ border: '1px solid #E2E8F0', backgroundColor: '#FFFFFF', color: '#1E293B' }} />
+                  <label className="block text-sm font-medium mb-1" style={{ color: '#10243E' }}>Email Address *</label>
+                  <input type="email" name="email" required value={formData.email} onChange={handleChange} placeholder="jane@example.com" className="block w-full px-4 py-3 rounded-lg" style={{ border: '1px solid #D9E2EC', backgroundColor: '#FFFFFF', color: '#10243E' }} />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium mb-1" style={{ color: '#1E293B' }}>Subject *</label>
-                  <select name="subject" required value={formData.subject} onChange={handleChange} className="block w-full px-4 py-3 rounded-lg" style={{ border: '1px solid #E2E8F0', backgroundColor: '#FFFFFF', color: '#1E293B' }}>
+                  <label className="block text-sm font-medium mb-1" style={{ color: '#10243E' }}>Subject *</label>
+                  <select name="subject" required value={formData.subject} onChange={handleChange} className="block w-full px-4 py-3 rounded-lg" style={{ border: '1px solid #D9E2EC', backgroundColor: '#FFFFFF', color: '#10243E' }}>
                     <option value="">Select a topic...</option>
                     <option value="general">General Inquiry</option>
-                    <option value="account">Account Help</option>
-                    <option value="guides">Guide Suggestion</option>
-                    <option value="saved">Saved Guides Question</option>
+                    <option value="employer">Employer Sign Up</option>
+                    <option value="company-code">Company Code Help</option>
+                    <option value="workshop">Workshop Question</option>
                     <option value="sms-optout">SMS Opt-Out Request</option>
                     <option value="sms-help">SMS Help</option>
                     <option value="privacy">Privacy / Data Request</option>
@@ -67,10 +67,10 @@ export default function ContactPage() {
                   </select>
                 </div>
                 <div>
-                  <label className="block text-sm font-medium mb-1" style={{ color: '#1E293B' }}>Message *</label>
-                  <textarea name="message" required rows={5} value={formData.message} onChange={handleChange} placeholder="What's on your mind?" className="block w-full px-4 py-3 rounded-lg" style={{ border: '1px solid #E2E8F0', backgroundColor: '#FFFFFF', color: '#1E293B' }} />
+                  <label className="block text-sm font-medium mb-1" style={{ color: '#10243E' }}>Message *</label>
+                  <textarea name="message" required rows={5} value={formData.message} onChange={handleChange} placeholder="What's on your mind?" className="block w-full px-4 py-3 rounded-lg" style={{ border: '1px solid #D9E2EC', backgroundColor: '#FFFFFF', color: '#10243E' }} />
                 </div>
-                <button type="submit" disabled={submitting} className="w-full py-3 px-6 rounded-lg font-semibold transition-opacity" style={{ backgroundColor: submitting ? '#475569' : '#B87333', color: submitting ? '#FFFFFF' : '#334155', cursor: submitting ? 'not-allowed' : 'pointer' }}>
+                <button type="submit" disabled={submitting} className="w-full py-3 px-6 rounded-lg font-semibold transition-opacity" style={{ backgroundColor: submitting ? '#3B5773' : '#E3B341', color: submitting ? '#FFFFFF' : '#0F2A4A', cursor: submitting ? 'not-allowed' : 'pointer' }}>
                   {submitting ? 'Sending...' : 'Submit'}
                 </button>
               </form>
@@ -78,37 +78,37 @@ export default function ContactPage() {
           </div>
           <div className="space-y-8">
             <div>
-              <h2 className="text-2xl font-bold mb-4" style={{ color: '#1E293B' }}>How to Reach Us</h2>
+              <h2 className="text-2xl font-bold mb-4" style={{ color: '#10243E' }}>How to Reach Us</h2>
               <div className="space-y-4">
                 <div>
-                  <h3 className="text-sm font-semibold uppercase tracking-wide mb-1" style={{ color: '#475569' }}>Email</h3>
-                  <a href="mailto:support@resourcesneeded.com" className="text-base font-medium hover:underline" style={{ color: '#B87333' }}>support@resourcesneeded.com</a>
-                  <p className="text-sm mt-1" style={{ color: '#475569' }}>We typically reply within 1–2 business days</p>
+                  <h3 className="text-sm font-semibold uppercase tracking-wide mb-1" style={{ color: '#3B5773' }}>Email</h3>
+                  <a href="mailto:support@getwalletwiser.com" className="text-base font-medium hover:underline" style={{ color: '#E3B341' }}>support@getwalletwiser.com</a>
+                  <p className="text-sm mt-1" style={{ color: '#3B5773' }}>We typically reply within 1–2 business days</p>
                 </div>
                 <div>
-                  <h3 className="text-sm font-semibold uppercase tracking-wide mb-1" style={{ color: '#475569' }}>Phone</h3>
-                  <a href="tel:+18335719204" className="text-base font-medium hover:underline" style={{ color: '#B87333' }}>(833) 571-9204</a>
+                  <h3 className="text-sm font-semibold uppercase tracking-wide mb-1" style={{ color: '#3B5773' }}>Phone</h3>
+                  <a href="tel:+18335719204" className="text-base font-medium hover:underline" style={{ color: '#E3B341' }}>(833) 571-9204</a>
                 </div>
                 <div>
-                  <h3 className="text-sm font-semibold uppercase tracking-wide mb-1" style={{ color: '#475569' }}>Mailing Address</h3>
-                  <p style={{ color: '#475569' }}>Resources Needed<br />600 N Broad St 446, Suite 5<br />Middletown, DE 19709</p>
+                  <h3 className="text-sm font-semibold uppercase tracking-wide mb-1" style={{ color: '#3B5773' }}>Mailing Address</h3>
+                  <p style={{ color: '#3B5773' }}>Wallet Wiser<br />600 N Broad St 446, Suite 5<br />Middletown, DE 19709</p>
                 </div>
                 <div>
-                  <h3 className="text-sm font-semibold uppercase tracking-wide mb-1" style={{ color: '#475569' }}>Text Support</h3>
-                  <p className="text-sm" style={{ color: '#475569' }}>Text <strong>STOP</strong> anytime to opt out, or <strong>HELP</strong> if you need a hand. Carrier rates may apply.</p>
+                  <h3 className="text-sm font-semibold uppercase tracking-wide mb-1" style={{ color: '#3B5773' }}>Text Support</h3>
+                  <p className="text-sm" style={{ color: '#3B5773' }}>Text <strong>STOP</strong> anytime to opt out, or <strong>HELP</strong> if you need a hand. Carrier rates may apply.</p>
                 </div>
               </div>
             </div>
             <div>
-              <h2 className="text-2xl font-bold mb-4" style={{ color: '#1E293B' }}>Common Questions</h2>
+              <h2 className="text-2xl font-bold mb-4" style={{ color: '#10243E' }}>Common Questions</h2>
               <div className="space-y-4">
                 <div>
-                  <h3 className="text-sm font-semibold mb-1" style={{ color: '#1E293B' }}>How can I stop getting texts?</h3>
-                  <p className="text-sm" style={{ color: '#475569' }}>Just text <strong>STOP</strong> back to any message and you'll be taken off the list right away.</p>
+                  <h3 className="text-sm font-semibold mb-1" style={{ color: '#10243E' }}>How can I stop getting texts?</h3>
+                  <p className="text-sm" style={{ color: '#3B5773' }}>Just text <strong>STOP</strong> back to any message and you'll be taken off the list right away.</p>
                 </div>
                 <div>
-                  <h3 className="text-sm font-semibold mb-1" style={{ color: '#1E293B' }}>Do you share my details with anyone?</h3>
-                  <p className="text-sm" style={{ color: '#475569' }}>Never for marketing purposes — your phone number stays with us. Full details are in our <a href="/privacy" className="font-medium hover:underline" style={{ color: '#B87333' }}>Privacy Policy</a>.</p>
+                  <h3 className="text-sm font-semibold mb-1" style={{ color: '#10243E' }}>Do you share my details with anyone?</h3>
+                  <p className="text-sm" style={{ color: '#3B5773' }}>Never for marketing purposes — your phone number stays with us. Full details are in our <a href="/privacy" className="font-medium hover:underline" style={{ color: '#E3B341' }}>Privacy Policy</a>.</p>
                 </div>
               </div>
             </div>

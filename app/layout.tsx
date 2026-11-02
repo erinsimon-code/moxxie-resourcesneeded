@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Resources Needed | Free Guides & Checklists for Life Events",
-  description: "Resources Needed is a free library of step-by-step guides and checklists for life events like moving, starting a new job, and getting ready for tax season. Create an account, pick a project, save guides, check off steps, and get reminders.",
+  title: "Wallet Wiser | Employer-Sponsored Financial Wellness Program",
+  description: "Wallet Wiser is an employer-sponsored financial wellness program. Employers sign up and get a company code, and employees enroll with that code to get short guides, live workshops, and monthly savings goal check-ins.",
 };
 
 export default function RootLayout({

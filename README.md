@@ -1,7 +1,7 @@
-# Resources Needed
+# Wallet Wiser
 
-Marketing site for Resources Needed, a free library of step-by-step guides and checklists for life events — moving, starting a new job, organizing household paperwork, budgeting for a big purchase, home maintenance basics, and getting ready for tax season. Members create an account, pick a project, save guides, check off steps, and get reminders.
+Marketing site for Wallet Wiser, an employer-sponsored financial wellness program. Employers sign up and get a company code, and employees enroll with that code to get short guides, live workshops, and monthly savings goal check-ins. Topics include budgeting basics, building an emergency fund, understanding your paycheck, getting ready for open enrollment, and setting savings goals.
 
-Resources Needed is operated by The Benefit Advisor LLC.
+Wallet Wiser is operated by The Benefit Advisor LLC.
 
-Live at: https://www.resourcesneeded.com
+Live at: https://www.getwalletwiser.com

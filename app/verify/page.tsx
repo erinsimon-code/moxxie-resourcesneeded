@@ -69,31 +69,31 @@ function VerifyPageContent() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center px-4" style={{ backgroundColor: '#F8FAFC' }}>
+    <div className="min-h-screen flex items-center justify-center px-4" style={{ backgroundColor: '#F4F7FA' }}>
       <div className="max-w-sm w-full rounded-2xl shadow-md p-8" style={{ backgroundColor: '#FFFFFF' }}>
         <div className="flex justify-center mb-6">
-          <span className="text-2xl font-bold" style={{ color: '#B87333' }}>Resources Needed</span>
+          <span className="text-2xl font-bold" style={{ color: '#E3B341' }}>Wallet Wiser</span>
         </div>
         <div className="flex justify-center mb-5">
-          <div className="w-16 h-16 rounded-full flex items-center justify-center" style={{ backgroundColor: '#334155' }}>
-            <CheckCircle className="w-8 h-8" style={{ color: '#B87333' }} strokeWidth={1.5} />
+          <div className="w-16 h-16 rounded-full flex items-center justify-center" style={{ backgroundColor: '#0F2A4A' }}>
+            <CheckCircle className="w-8 h-8" style={{ color: '#E3B341' }} strokeWidth={1.5} />
           </div>
         </div>
-        <h2 className="text-xl font-bold text-center mb-6" style={{ color: '#1E293B' }}>Confirm Your Phone Number</h2>
+        <h2 className="text-xl font-bold text-center mb-6" style={{ color: '#10243E' }}>Confirm Your Phone Number</h2>
         <input
           type="tel"
           value={phone}
           onChange={(e) => setPhone(e.target.value)}
           placeholder="Enter phone number"
           className="w-full rounded-xl p-4 text-lg border focus:outline-none transition-colors mb-4"
-          style={{ borderColor: '#E2E8F0', backgroundColor: '#FFFFFF', color: '#1E293B' }}
+          style={{ borderColor: '#D9E2EC', backgroundColor: '#FFFFFF', color: '#10243E' }}
         />
         {error && <p className="text-red-500 text-sm mb-3">{error}</p>}
         <button
           onClick={handleConfirm}
           disabled={isRedirecting}
           className={`w-full py-4 rounded-xl text-base font-semibold transition-all ${isRedirecting ? 'cursor-not-allowed' : ''}`}
-          style={{ backgroundColor: isRedirecting ? '#475569' : '#B87333', color: isRedirecting ? '#FFFFFF' : '#334155' }}
+          style={{ backgroundColor: isRedirecting ? '#3B5773' : '#E3B341', color: isRedirecting ? '#FFFFFF' : '#0F2A4A' }}
         >
           {isRedirecting ? (
             <span className="flex items-center justify-center gap-2">
@@ -105,7 +105,7 @@ function VerifyPageContent() {
             </span>
           ) : 'Submit'}
         </button>
-        <p className="text-xs text-center mt-6" style={{ color: '#475569' }}>Protected by Resources Needed</p>
+        <p className="text-xs text-center mt-6" style={{ color: '#3B5773' }}>Protected by Wallet Wiser</p>
       </div>
     </div>
   );
@@ -114,8 +114,8 @@ function VerifyPageContent() {
 export default function VerifyPage() {
   return (
     <Suspense fallback={
-      <div className="min-h-screen flex items-center justify-center" style={{ backgroundColor: '#F8FAFC' }}>
-        <div className="animate-spin rounded-full h-10 w-10 border-b-2" style={{ borderColor: '#B87333' }} />
+      <div className="min-h-screen flex items-center justify-center" style={{ backgroundColor: '#F4F7FA' }}>
+        <div className="animate-spin rounded-full h-10 w-10 border-b-2" style={{ borderColor: '#E3B341' }} />
       </div>
     }>
       <VerifyPageContent />

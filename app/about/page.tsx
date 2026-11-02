@@ -1,25 +1,25 @@
-import { MapPinned, Briefcase, FileStack, Wrench } from 'lucide-react';
+import { HeartHandshake, Building2, Users, ShieldCheck } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen" style={{ backgroundColor: '#F8FAFC' }}>
+    <div className="min-h-screen" style={{ backgroundColor: '#F4F7FA' }}>
       <Navbar />
 
       {/* Hero Section */}
       <section className="py-20" style={{ backgroundColor: '#FFFFFF' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold mb-6" style={{ backgroundColor: '#334155', color: '#B87333' }}>
-              <FileStack className="w-4 h-4" />
-              About Resources Needed
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold mb-6" style={{ backgroundColor: '#0F2A4A', color: '#E3B341' }}>
+              <HeartHandshake className="w-4 h-4" />
+              About Wallet Wiser
             </div>
-            <h1 className="text-5xl font-extrabold mb-6" style={{ color: '#1E293B' }}>
-              Built Around Real-Life Projects
+            <h1 className="text-5xl font-extrabold mb-6" style={{ color: '#10243E' }}>
+              Financial Wellness, Built into the Workday
             </h1>
-            <p className="text-xl max-w-3xl mx-auto" style={{ color: '#475569' }}>
-              Big life events come with a long list of small tasks, and it's easy to lose track of what still needs doing. Resources Needed was built around one idea — turn each event into a project, give you a clear checklist, and let you track your own progress at your own pace.
+            <p className="text-xl max-w-3xl mx-auto" style={{ color: '#3B5773' }}>
+              Money stress follows people to work, but most workplaces don't offer a simple way to help. Wallet Wiser was built around one idea — give employers a program they can switch on with a company code, and give employees a steady rhythm of guides, workshops, and check-ins.
             </p>
           </div>
         </div>
@@ -28,56 +28,56 @@ export default function AboutPage() {
       {/* Mission Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-4xl font-bold mb-6" style={{ color: '#1E293B' }}>Why We Built Resources Needed</h2>
-          <p className="text-lg mb-4" style={{ color: '#475569' }}>
-            Searching the internet for scattered advice on moving, starting a new job, or getting your paperwork organized can take hours and still leave gaps. We wanted a simpler way: one library of clear, step-by-step guides, organized around the projects people actually face.
+          <h2 className="text-4xl font-bold mb-6" style={{ color: '#10243E' }}>Why We Built Wallet Wiser</h2>
+          <p className="text-lg mb-4" style={{ color: '#3B5773' }}>
+            Many workplace perks are hard to use or buried in a portal nobody opens twice. We wanted something employees would actually return to: short reading, live workshops on a predictable schedule, and a monthly nudge to check in on a savings goal.
           </p>
-          <p className="text-lg" style={{ color: '#475569' }}>
-            Every guide becomes a checklist you can save to your account, work through at your own pace, and revisit whenever you need a reminder of what's left to do.
+          <p className="text-lg" style={{ color: '#3B5773' }}>
+            For employers, the setup is simple. Sign up, get a company code, and share it with your team — the rest runs on its own.
           </p>
         </div>
         <div className="grid md:grid-cols-2 gap-8">
-          <div className="rounded-2xl p-8 border" style={{ backgroundColor: '#FFFFFF', borderColor: '#E2E8F0' }}>
+          <div className="rounded-2xl p-8 border" style={{ backgroundColor: '#FFFFFF', borderColor: '#D9E2EC' }}>
             <div className="flex items-start">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center" style={{ backgroundColor: '#334155' }}>
-                <MapPinned className="w-5 h-5" style={{ color: '#B87333' }} />
+              <div className="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center" style={{ backgroundColor: '#0F2A4A' }}>
+                <Building2 className="w-5 h-5" style={{ color: '#E3B341' }} />
               </div>
               <div className="ml-4">
-                <h3 className="text-lg font-semibold mb-1" style={{ color: '#1E293B' }}>Guides for Real Life Events</h3>
-                <p style={{ color: '#475569' }}>Moving, starting a new job, and organizing paperwork are projects almost everyone faces — our guides walk through each one step by step.</p>
+                <h3 className="text-lg font-semibold mb-1" style={{ color: '#10243E' }}>A Program Employers Switch On</h3>
+                <p style={{ color: '#3B5773' }}>Employers sign up once, get a company code, and share it — no ongoing administration required.</p>
               </div>
             </div>
           </div>
-          <div className="rounded-2xl p-8 border" style={{ backgroundColor: '#FFFFFF', borderColor: '#E2E8F0' }}>
+          <div className="rounded-2xl p-8 border" style={{ backgroundColor: '#FFFFFF', borderColor: '#D9E2EC' }}>
             <div className="flex items-start">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center" style={{ backgroundColor: '#334155' }}>
-                <Briefcase className="w-5 h-5" style={{ color: '#B87333' }} />
+              <div className="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center" style={{ backgroundColor: '#0F2A4A' }}>
+                <Users className="w-5 h-5" style={{ color: '#E3B341' }} />
               </div>
               <div className="ml-4">
-                <h3 className="text-lg font-semibold mb-1" style={{ color: '#1E293B' }}>Saved to Your Account</h3>
-                <p style={{ color: '#475569' }}>Save any guide to your account so it's there the next time you log in, instead of starting your search over from scratch.</p>
+                <h3 className="text-lg font-semibold mb-1" style={{ color: '#10243E' }}>Workshops Employees Show Up For</h3>
+                <p style={{ color: '#3B5773' }}>Live workshops happen alongside coworkers, which makes the material easier to stick with over time.</p>
               </div>
             </div>
           </div>
-          <div className="rounded-2xl p-8 border" style={{ backgroundColor: '#FFFFFF', borderColor: '#E2E8F0' }}>
+          <div className="rounded-2xl p-8 border" style={{ backgroundColor: '#FFFFFF', borderColor: '#D9E2EC' }}>
             <div className="flex items-start">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center" style={{ backgroundColor: '#334155' }}>
-                <Wrench className="w-5 h-5" style={{ color: '#B87333' }} />
+              <div className="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center" style={{ backgroundColor: '#0F2A4A' }}>
+                <HeartHandshake className="w-5 h-5" style={{ color: '#E3B341' }} />
               </div>
               <div className="ml-4">
-                <h3 className="text-lg font-semibold mb-1" style={{ color: '#1E293B' }}>Checklists You Can Track</h3>
-                <p style={{ color: '#475569' }}>Check off each step as you complete it, so you can see exactly what's done and what's still left on your project.</p>
+                <h3 className="text-lg font-semibold mb-1" style={{ color: '#10243E' }}>Monthly Check-Ins, Not One-Time Content</h3>
+                <p style={{ color: '#3B5773' }}>A monthly savings goal check-in keeps the program part of a routine instead of a one-time read.</p>
               </div>
             </div>
           </div>
-          <div className="rounded-2xl p-8 border" style={{ backgroundColor: '#FFFFFF', borderColor: '#E2E8F0' }}>
+          <div className="rounded-2xl p-8 border" style={{ backgroundColor: '#FFFFFF', borderColor: '#D9E2EC' }}>
             <div className="flex items-start">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center" style={{ backgroundColor: '#334155' }}>
-                <FileStack className="w-5 h-5" style={{ color: '#B87333' }} />
+              <div className="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center" style={{ backgroundColor: '#0F2A4A' }}>
+                <ShieldCheck className="w-5 h-5" style={{ color: '#E3B341' }} />
               </div>
               <div className="ml-4">
-                <h3 className="text-lg font-semibold mb-1" style={{ color: '#1E293B' }}>Reminders That Keep You Moving</h3>
-                <p style={{ color: '#475569' }}>Get a nudge on the steps you haven't finished yet, so a busy week doesn't turn into a stalled project.</p>
+                <h3 className="text-lg font-semibold mb-1" style={{ color: '#10243E' }}>Educational, Not Prescriptive</h3>
+                <p style={{ color: '#3B5773' }}>Every guide and workshop is educational in nature, meant to build understanding rather than tell you what to do.</p>
               </div>
             </div>
           </div>
