@@ -7,15 +7,15 @@ export default function Navbar() {
   const pathname = usePathname();
 
   const linkColor = (href: string) =>
-    pathname === href ? '#DE7A49' : '#F5F4EF';
+    pathname === href ? '#DDA15E' : '#FDF8F0';
 
   return (
-    <nav className="shadow-sm" style={{ backgroundColor: '#0E3B36' }}>
+    <nav className="shadow-sm" style={{ backgroundColor: '#1B4332' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-32">
           <div className="flex items-center">
             <Link href="/" className="flex-shrink-0">
-              <span className="text-2xl font-bold" style={{ color: '#DE7A49' }}>Resources Needed</span>
+              <span className="text-2xl font-bold" style={{ color: '#DDA15E' }}>Resources Needed</span>
             </Link>
           </div>
           <div className="hidden md:block">
@@ -35,7 +35,7 @@ export default function Navbar() {
               <Link href="/contact" style={{ color: linkColor('/contact') }} className="hover:opacity-80 px-3 py-2 rounded-md text-sm font-medium">
                 Contact
               </Link>
-              <Link href="/signup" className="px-4 py-2 rounded-md text-sm font-medium" style={{ backgroundColor: '#DE7A49', color: '#0E3B36' }}>
+              <Link href="/signup" className="px-4 py-2 rounded-md text-sm font-medium" style={{ backgroundColor: '#DDA15E', color: '#1B4332' }}>
                 Get Started
               </Link>
             </div>
